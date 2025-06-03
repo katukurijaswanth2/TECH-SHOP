@@ -1,21 +1,123 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-.logo{
-    color:rgb(244, 246, 248);
-}.nav-bar{
- padding: 8px;
- display:flex;
- justify-content: space-between;
- background-color:rgb(0, 0, 0);
+
+header {
+    display: flex;
+    align-items: center;
+
+    background-color: black;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+}
+
+nav .icons {
+    gap: 0px 45px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 30px;
+}
+
+body {
+    background-color: black;
+}
+.wrong{
+justify-content: space-between;
+    display: flex;
+}
+.log-in a{
+    text-decoration: none;
+    font-style: none;
+    color: #ffffff;
+}
+
+
+.log-in {
+    width: 300px;
+padding: 20px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    align-content: center;
+    margin: auto;
+    border: 1px solid white;}
+
+input,button{
+  width: 100%;
+  box-sizing: border-box; 
+  padding: 10px;
+  margin:10px 0;
+   border-radius: 3px;
+  background-color: black;
+  border: 1px solid white;
+color:rgb(246, 247, 248)
+}
+input::placeholder{
+    color: aliceblue;
+}
+button{
+    background-color: rgb(252, 5, 5);
+}
+h4,p{
+    color:#ffffff;
+    margin:9px;
+}
+.log-options a{
+    text-decoration: none;
+color: #ffffff;
+}.log-options {
+display: flex;
+justify-content: center;
+ gap:2%
+}
+.log-options .fb,.gg,.tw{
+    background-color: rgb(84, 84, 248);
+ height: 20px;
+
+    width: auto;
+    width: 33%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.log-options .gg
+{
+    background-color: rgb(248, 0, 0);
+  
+}
+.log-options .tw
+{
+    background-color: rgb(84, 84, 248);
 
 }
-.icons{
-padding: 6px;
-display: flex;
-justify-content: space-between;
+hr{
+    margin: 10px;
 }
-.icons i{
-    margin: 0px 30px;
+.ot{
+    color: #ffffff;
+  margin: 10px ;
+    text-align: center;
+    align-items: center;
+}
+.ot::before,.ot::after{
+  content: "───────";
+ margin: 10px ;
+}
+.ot::before{
+    margin-left: 10px;
+    
+}.ot::after{
+    margin-right: 10px;
+    
+}
+.ot span{
+    color: #ffffff;
+    font-size: 14px;
 }
