@@ -108,15 +108,9 @@ hr{
 }
 .ot::before,.ot::after{
   content: "───────";
- margin: 10px ;
+ margin: 11px ;
 }
-.ot::before{
-    margin-left: 10px;
-    
-}.ot::after{
-    margin-right: 10px;
-    
-}
+
 .ot span{
     color: #ffffff;
     font-size: 14px;
