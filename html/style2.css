@@ -1,6 +1,7 @@
 body {
     color: aliceblue;
     background-color: black;
+    padding: 0;
 }
 header{
     display: flex;
@@ -33,17 +34,17 @@ header{
     column-gap: 15px;
 }
 
-* {
-    /* margin: 0;
-    /* padding: 0;  */
-}
 
 button {
     background-color: rgb(9, 212, 9);
     color: aliceblue;
     padding: 10px;
+    width: 100%;
     font-weight: 300;
     border-radius: 5px;
+    cursor: pointer;
+
+
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -53,20 +54,25 @@ button {
     justify-content: space-between;
 }
 
-.card-offers button {
-    background-color: rgba(83, 80, 80, 0.878);
+.card-offers>button {
+    background-color: rgba(24, 23, 23, 0.878);
     color: aliceblue;
     border: 1px solid white;
-    padding: 5px;
+    padding: 2px;
+    font-weight: 400;
+    font-size: larger;
 }
 
 .card-offers {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: space-between; 
+
     column-gap: 5px;
 }
-
+.card-offers p{
+    margin: 5px;
+}
 .over-view {
     width: 55%;
 }
@@ -108,7 +114,9 @@ hr {
     justify-content: center;
     align-items: center;
 }
-
+.stock-icon{
+    width: 130px;
+}
 
 .product-images img {
     
@@ -119,7 +127,7 @@ hr {
 .products-overview {
     display: flex;
     column-gap: 5px;
-    padding: 5%;
+    padding: 10px;
 }
 
 .imgs-product {
@@ -153,120 +161,319 @@ hr {
 .img2 {
     border: 2px solid white;
 }
-@media (min-width:767px) and (max-width:1023px) {
-    .products-overview{
-        padding: 2%;
-        width:95%;
-        height:100%;
+
+     body {
+      background-color: #1e1e1e;
+      /* color: #b0b0ff; */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .active {
+      background-color: red;
+      color: white;
+    }
+
+    .specs {
+      width: 33%;
+      margin: 0 auto;
+      justify-content: left;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin: 12px 0;
+    }
+
+    .label {
+      color: #cccccc;
+    }
+
+    .value {
+      font-weight: bold;
+      color: #d0d0ff;
+    }
+    /* related products ends here */
+    /* specifications starts here*/
+    .specifications>.spec-header{
+        display: flex;
         justify-content: center;
+        gap: 30px;
+
 
     }
-    .product-images{
-        display:flex;
-        column-gap: 1%;
-        width:45%;
-    }
-    .product-images img{
-        width:100%;
-        height:100%;
-    }
-    .img2,.img1{
-        width:100%;
-        height:100%;
-        display: flex;
-        justify-content: center;
-        padding: 0px;
-        align-items: center;
-    }
-    .img2 img,.img1 img{
-        width:90%;
-        height:90%;
-        padding: 5%;
-    }
-    .imgs-product{
-        width:20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }.over-view{
-        width:35%;
-    }
-    .prices{
-        display: flex;
-        flex-direction: column;
-        column-gap: 1px;
-    }
-    .price-details{
-        display:flex;
-        flex-direction: column;
-    }
-}@media (max-width:766px) {
-    .products-overview{
-        display:flex;
-        flex-direction: row;
-        column-gap: 1%;
-        padding: 2%;
-        width:95%;
-        height:100%;
-        justify-content: center;
-    }
-    .product-images{
-        width:100%;
-    }
-    .product-images img{
-        width:200px;
-        height:200px;
-    }
-    .imgs-product{
-        display: none;
-    }.over-view{
-        width:40%;
+.spec-header> button {
+text-decoration: none;
+color: #ffffff;
+background-color: rgb(39, 38, 38);
+margin: 2px;
+padding: 0;
+width: 150px;
+border-radius: 7px;
+}
 
+.spec-header .sp-1{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0%;
+    border-radius: 5px;
+}
+.spec-header h2{
+    margin: 10px;
+}.spec-header a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: small;
+
+}.specs-container {
+      display: grid;
+      grid-template-columns: 200px 300px;
+      row-gap: 20px;
+      column-gap: 180px;
     }
-    .prices{
-        display: flex;
-        flex-direction: row;
-        column-gap: 1px;
-    }.taxes{
-        margin:0px;
-        font-size: x-small;
+    .label {
+      color: #b0b0b0;
     }
-    .stock-icon button{
-        width:50px;
-        height:30px;
-        font-size: xx-small;
-        display: flex;
-        align-items: center;
+    .value {
+      font-weight: bold;
+      color: #ffffff;
     }
-    .price-details{
-        display:flex;
-        flex-direction: column;
-    }
-     h1,h4,.prices,i,p,button,span{
-        font-size: xx-small;
-        margin-bottom:0px;
-    }
-    .card-offers button{
-        margin: 5px 2px;
-    }
-    .card-offers p{
-        margin:0px;
-        padding: 3px;
-        font-size:0.5rem;
-        
-    }
-    hr{
-        margin:3px;
-    }
-    .card-offers button{
-        width:100px;
-        padding: 0px;
-    }
-    .addtocart{
-        width:100%;
-    }
-    .addtocart button{
-        width:100%;
-        padding: 5px;
-        border:1px solid white;
-    } 
+      /* specifications ends here*/
+      /* products cards strts here */
+      .box {
+    width: 200px;
+
+    display: block;
+    border: 2px solid rgb(69, 63, 63);
+    padding: 2px;
+    border-radius: 3px;
+
+}
+
+.box .product-img {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.product-details .product-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.img-section {
+    background-color: rgb(22, 19, 19);
+    padding: 10px 2px;
+}
+
+.product-details i {
+    font-size: xx-small;
+    padding: 10px 0px;
+}
+
+.product-details p {
+    font-size: small;
+    padding-left: 0%;
+    margin: 0;
+    color: #b0abab;
+}
+
+.product-details {
+    font-size: xx-small;
+    padding: 5px;
+}
+
+.product-details hr {
+    color: aliceblue;
+    padding: 0px 2px 2px 0px;
+    border: none;
+}
+
+.price {
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.price strike {
+    margin-top: 5px;
+    padding-top: px;
+    font-size: medium;
+    color: rgb(63, 59, 59);
+}.product-details hr{
+    margin: 0;
+}
+
+.product-details button {
+    font-size: medium;
+    font-weight: 400;
+    border: none;
+    border-radius: 2px;
+background-color: red;
+}
+
+.product-details button:hover {
+    background-color: #ffffff;
+    color: black;
+   
+}
+.cards{ display: flex;
+gap:20px;
+}
+.card-parent{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+/* products cards ends here */
+      /* advantages section starts here */
+   
+.advantages {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.advantage-items {
+  display: flex;
+  justify-content: center;
+ justify-content: space-around;
+  margin-top: 30px;
+ 
+}
+.text-p{
+  display: block
+}
+.text-p> p{
+  font-size: larger;
+}
+
+
+
+.item {
+  display: flex;
+  gap: 20px;
+  justify-self:center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 40px;
+  color: red;
+  display: block;
+  margin-bottom: 10px;
+}
+      /* advantages section ends here */
+      /* FOOTER STARTS HERE*/
+    footer {
+  background-color: #0d0d0d;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.newsletter {
+  flex: 1;
+  min-width: 250px;
+}
+
+.newsletter form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: 1px solid #333;
+  background: transparent;
+  color: white;
+  
+}.card-parent{
+  display: grid;
+flex-wrap: wrap;
+}
+
+.newsletter button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: larger;
+  font-weight: 500;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 2px;
+
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  min-width: 250px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.social-icons span {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.footer-links ul li{
+  list-style: none;
+  text-decoration: none;
+  color:#595757
+
+}
+        /* FOOTER ENDS HERE*/

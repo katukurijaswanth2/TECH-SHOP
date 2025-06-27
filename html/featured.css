@@ -1,0 +1,36 @@
+body{color:white;
+background-color: black;}
+*{margin:0;
+padding:0;}
+.p1 {
+  
+    width: 100px;
+    border: 1px solid red;
+  
+}
+
+.p1 img {
+
+    width: 90%;
+    border-radius: 3px;
+    object-fit: cover;
+
+}
+
+.p1 .fp-head {
+    color: gray;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p1 .price-fp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-fp span {
+    color: gray
+}
