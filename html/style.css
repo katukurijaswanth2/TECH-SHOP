@@ -1,45 +1,41 @@
+
+
+body {
+  margin: 0;
+  font-size: small;
+  row-gap: 20px;
+  background-color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ccc;
+}
 header {
   display: flex;
   align-items: center;
   background-color: black;
   justify-content: space-between;
+  width:100%;
+  padding: 2rem;
 }
 
 header h1 {
   color: white;
+  margin-left: 5rem;
+
 }
 
 nav .icons {
-  gap: 0px 45px;
+  gap: 0px 5rem;
   align-items: center;
   justify-content: space-between;
   display: flex;
-  margin-right: 30px;
+  margin-right: 5rem;
+  font-size: xx-large;
 }
 
-body {
-  background-color: black;
+nav a{
+  text-decoration: none;
+  color:white;
 }
-
-
-
-.carousal {
-  width: 100%;
-  padding: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-
-/* img {
-    float: right;
-    height: 250px;
-    width: 250px; */
-
 
 .coarousal-logo {
   position: relative;
@@ -71,31 +67,115 @@ body {
   display: none;
 }
 
-.carousal {
-  display: none;
+/* feature products starts here */
+.featurep{
+  width:100%;
+  height:100%;
 }
+.featurep tr{
+  width:auto;
+  display: flex;
+  height: 600px;
+  column-gap: 5rem;
+}
+
+td {
+  height: 700px;
+  padding: 10px;
+}
+
+td p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size:x-large;
+}
+
+td img {
+  height: 200px;
+  object-fit: fill;
+}
+
+td div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.p3 {
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:30%;
+}
+.p3 img{
+  height:80%;
+}
+.p3 div {
+  font-size: xx-large;
+}
+
+.p2 img{
+  height:60%;
+}
+.p2 {
+  width:20%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p2 div {
+  font-size: x-large;
+}
+
+.p1 img{
+  height:40%;
+}
+.p1 {
+  width:10%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p1 div {
+  font-size: larger;
+}
+/* feature products ends here */
 
 /* box style starts here */
 .box {
-  width: 235px;
+  width: 500px;
+ height: auto;
   border: 2px solid rgb(69, 63, 63);
-  padding: 2px;
+  padding:1rem;
   border-radius: 3px;
-
-
 }
 
-.cards {
+.card-parent{
+  width:100%;
   display: flex;
+  justify-items: center;
+
+}
+.cards {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
- 
+  gap: 3rem;
+  margin-top: 5rem;
+  /* padding: 20px; */
 }
 
 .box .product-img {
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
   margin: auto;
   justify-content: center;
   display: flex;
@@ -103,7 +183,7 @@ body {
 
 .product-details .product-title {
   color: #ffffff;
-  font-size: 20px;
+  font-size:xx-large;
   font-weight: 700;
 
 }
@@ -114,12 +194,12 @@ body {
 }
 
 .product-details i {
-  font-size: xx-small;
-  padding: 10px 0px;
+  font-size: x-large;
+  margin:1rem 0rem;
 }
 
 .product-details p {
-  font-size: small;
+  font-size: x-large;
   padding-left: 0%;
   margin: 0;
   color: #b0abab;
@@ -149,23 +229,26 @@ body {
 
 .price h2 {
   padding-left: 6px;
+  font-size: xx-large;
 }
 
 .price strike {
   margin-top: 5px;
   padding-top: px;
-  font-size: medium;
+  font-size: xx-large;
   color: rgb(63, 59, 59);
 }
 
 .product-details button {
-  font-size: medium;
+  font-size: x-large;
+  padding:0.2rem;
   font-weight: 400;
   border: none;
   border-radius: 2px;
   background-color: red;
-  margin-top: 2px; 
+  margin: 0.5rem;
   padding-top: 0;
+  width:50%;
 }
 
 .product-details button:hover {
@@ -176,93 +259,26 @@ body {
 
 /* box style ends here */
 
-body {
-  margin: 0;
-  font-size: small;
-  row-gap: 20px;
-  background-color: #111;
-  font-family: 'Segoe UI', sans-serif;
-  color: #ccc;
-}
-
-/* featured product starts here */
-.container {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1em;
-  color: #c5c8f7;
-}
-
-.products {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  /* flex-wrap: wrap; */
-  margin-top: 40px;
-}
-
-.product {
-  text-align: center;
-  width: 100%;
-}
-
-.product-3 {
-  text-align: center;
-  /* max-width: 250px; */
-  /* width: 200px; */
-}
-
-.product-3 img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
-
-}
 
 
-.product img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.product-name {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #b0abab;
-}
-
-.price {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #fff;
-}
-
-.original-price {
-  text-decoration: line-through;
-  color: #888;
-  margin-left: 10px;
-  font-size: 0.9em;
-}
+/*  */
 
 .pagination {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px, 0, 0, 0;
+  margin: 5rem;
 }
 
 .dot {
-  height: 10px;
-  width: 10px;
+  height: 2rem;
+  width: 2rem;
   margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  font-size: xx-large;
 }
 
 .dot.active {
@@ -272,19 +288,12 @@ h2 {
 /* feature products ends here */
 /* footer stars here */
 /* General Reset */
-
-
-h2,
-h5,
-h4,
-h3,
-p {
+h2,h5,h4,h3,p {
   color: #cbd5e1;
   font-size: x-small
 }
 
-a,
-li {
+a,li {
   list-style: none;
   text-decoration: none;
   color: #d1d5db;
@@ -294,6 +303,12 @@ li {
 .advantages {
   text-align: center;
   padding: 40px 20px;
+  margin:5rem 0rem 0.5rem 0rem;
+}
+
+.advantages h2{
+  margin:5rem;
+  font-size: xx-large;
 }
 
 .advantage-items {
@@ -338,12 +353,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  /* gap: 40px; */
 }
 
 .newsletter {
   flex: 1;
-  min-width: 250px;
+  width: 40%;
 }
 
 .newsletter form {
@@ -358,11 +373,13 @@ footer {
   border: 1px solid #333;
   background: transparent;
   color: white;
+  width:25%;
+  width:300px
 
 }
 
 .card-parent {
-  display: grid;
+  /* display: grid; */
   flex-wrap: wrap;
 }
 
@@ -383,11 +400,20 @@ footer {
   display: flex;
   flex: 2;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-  min-width: 250px;
+  width: 60%;
 }
 
+.footer-links div {
+  /* width:100%; */
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.footer-links ul {
+  padding: 0%;
+}
 .footer-links h4 {
   margin-bottom: 10px;
 }
@@ -413,3 +439,115 @@ footer {
 }
 
 /* footer ends here */
+
+/* footer starts here */
+.main-table{
+display: flex;
+height:auto;
+width: 100%;
+height:auto;
+/* flex-wrap: wrap; */
+}
+.pswd{
+  width:100%;
+  margin-right: 50px;
+  padding: 0%;
+
+}
+.footer-fix{
+  display: flex;
+  width:100%;
+}
+.main-table td{
+padding: 5%;
+width:100%;
+}
+.main-table th{
+padding: 5%;
+font-size: x-large;
+width:100%;
+}
+.footerwidths{
+width:100%;
+}
+.footerwidths th,.footerwidths td{
+  width:100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footerwidths .sub-footer{
+  width:250px;
+  display: flex;
+  justify-content: start;
+}
+.main-table input{
+  background-color: #0d0d0d;
+  outline: none;
+  border: none;
+  border:1px solid white;
+  border-radius: 2px;
+  height:2rem;
+}
+.main-table table{
+width:100%;
+height:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main-table button{
+width:100%;
+background-color: red;
+padding: 0.5rem 3rem;
+}
+
+/* media  */
+@media (max-width:1023px ) {
+ .box{
+  width:300px;
+ }
+ header h1{
+  margin: 0%;
+ }
+ nav{
+  display: none;
+ }
+}
+@media (max-width:985px ) {
+  .main-table{
+  width:100%;
+column-gap: 30px;
+  display: flex;
+  flex-direction:column;
+ }
+.footer-fix{
+  display: flex;
+  justify-self: center;
+  width:100%;
+ }
+ .footerwidths td{
+   display: flex;
+  justify-self: center;
+  align-items: center;
+  width:100%;
+ }
+ 
+ .pswd{
+  width:100%;
+ }
+}
+@media (max-width:767px ) {
+  .main-table{
+  width:100%;
+ column-gap: 0px;
+  display: flex;
+ }
+ .footer-fix{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width:100%;
+ }
+}
